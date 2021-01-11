@@ -6,7 +6,13 @@ import utilStyles from '../styles/utils.module.css'
 const name = 'corekako'
 export const siteTitle = 'Next.js Sample Website'
 
-export default function Layout({ children, home }) {
+export default function Layout({
+	children,
+	home,
+}: {
+	children: React.ReactNode,
+	home?: Boolean,
+}) {
 	return (
 		<div className={styles.container}>
 			<Head>
